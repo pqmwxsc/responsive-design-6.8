@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+.bg img{
+    display: flex;
+    width: 100%;
+
+    background-size: cover;
+    background-position: left;
+    justify-content: space-around;
+}
+
+
+
+@media (max-width: 768px) {
+    .upper__bg--image img{ 
+    width: 100%;
+    height: 88px;
+    }
+
+    .upper--call,
+    .upper--chat,
+    .upper--profile,
+    .upper--divider2 {
+        display: none;
+    }
+
+    .upper--slide2,
+    .bottom--text3,
+    .bottom--text2,
+    .upper--one,
+    .upper--two,
+    .upper--three {
+        display: none;
+    }
+
+    .upper {
+        position: relative;
+    }
+
+    .upper__menu {
+        position: absolute;
+        top: 20px;
+        left: 8px;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        gap: 20px;
+    } 
+
+    .bottom {
+        position: relative;
+    }
+
+    .bottom__menu {
+        position: absolute;
+        top:30px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bottom--title {
+        margin-bottom: 24px;
+    }
+
+    .bottom--slide img,
+    .bottom--text img,
+    .bottom--readmore img {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 1120px) and (min-width: 768px) {
+    .upper__bg--image img{ 
+    width: 100%;
+    height: 88px;
+    }
+    .bottom--text,
+    .bottom--text3,
+    .upper--slide2,
+    .upper--one,
+    .upper--two,
+    .upper--three {
+        display: none;
+    }
+    
+    .upper {
+    position: relative;
+    }
+
+    .upper__menu {
+        position: absolute;
+
+        top: 20px;
+        left: 8px;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        gap: 20px;
+    }
+
+    .upper--burger {
+        order: 1;
+    }
+    .upper--logo {
+        order: 2;
+    }
+    .upper--divider {
+        order: 3;
+    }
+    .upper--call {
+        margin-left: auto;
+        order: 4;
+    }
+    .upper--chat {
+        order: 5;
+    }
+    .upper--profile {
+        order: 6;
+    }
+    .upper--divider2 {
+        order: 7;
+    }
+    .upper--tools {
+        order: 8;
+    }
+    .upper--status {
+        order: 9;
+    }
+
+    .bottom {
+        position: relative;
+    }
+
+    .bottom__menu {
+        position: absolute;
+        top:30px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .column--bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        }
+
+    .row--bottom {
+        display: flex;
+        flex-direction: row;
+        gap: 85px;
+    }
+
+    .smaller--column--bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .bottom--slide,
+    .bottom--text2,
+    .bottom--readmore {
+        margin-left: 15px;
+    }
+    .bottom--picture {
+        transform: scale(1.2);
+    }
+}
+
+@media (min-width: 1120px) {
+    .upper__bg,
+    .upper--burger,
+    .upper--divider,
+    .upper--divider2,
+    .upper--logo,
+    .upper--call,
+    .upper--chat,
+    .upper--profile,
+    .upper--tools,
+    .upper--status,
+    .bottom--slide,
+    .bottom--text,
+    .bottom--text2 {
+        display: none;
+    }
+
+    .bottom {
+        position: relative;
+    }
+    .bottom__menu {
+        position: absolute;
+        top: 40px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .side {
+        display: flex;
+        flex-direction: row;
+    }
+    .inner--slide {
+        display: flex;
+        flex-direction: row;
+    }
+    .row--bottom {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .text__3 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .upper--slide2,
+    .bottom--text3,
+    .bottom--readmore {
+        margin-left: 30px;
+    }
+    .upper--slide2 {
+        margin-top: 20px;
+    }
+    .inner--slide {
+        margin-left: auto;
+        gap: 20px;
+    }
+    .upper--one {
+        margin-top: 7px;
+    }
+    .bottom--picture {
+        transform: scale(1.6);
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+}
